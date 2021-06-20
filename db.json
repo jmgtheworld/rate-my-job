@@ -1,0 +1,18 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "company": "Apple",
+      "job_title": "Software Developer",
+      "review_title": "VERY GOOD",
+      "text": "Overall I enjoy working at Apple"
+    },
+    {
+      "id": 2,
+      "company": "Microsoft",
+      "job_title": "Full Stack Developer",
+      "review_title": "limitless opportunities",
+      "text": "I was very impressed at opportunities given at microsoft"
+    }
+  ]
+}
