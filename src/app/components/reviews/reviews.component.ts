@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReviewService } from 'src/app/services/review.service';
 import { Review } from '../../Review';
 
 @Component({
@@ -9,7 +10,11 @@ import { Review } from '../../Review';
 export class ReviewsComponent implements OnInit {
   reviews: Review[] = [];
 
-  constructor() {}
+  constructor(private reviewService: ReviewService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.reviewService
+      .getReviews()
+      .subscribe((reviews) => (this.reviews = reviews));
+  }
 }
