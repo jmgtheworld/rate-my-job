@@ -3,16 +3,20 @@
     {
       "id": 1,
       "company": "Apple",
-      "job_title": "Software Developer",
-      "review_title": "VERY GOOD",
+      "title": "VERY GOOD",
       "text": "Overall I enjoy working at Apple"
     },
     {
       "id": 2,
       "company": "Microsoft",
-      "job_title": "Full Stack Developer",
-      "review_title": "limitless opportunities",
+      "title": "limitless opportunities",
       "text": "I was very impressed at opportunities given at microsoft"
+    },
+    {
+      "company": "2",
+      "title": "4",
+      "text": "4",
+      "id": 3
     }
   ]
 }

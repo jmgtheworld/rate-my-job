@@ -1,1 +1,5 @@
-<app-review-item></app-review-item>
+<app-new-review (onAddReview)="addReview($event)"></app-new-review>
+<app-review-item
+  *ngFor="let review of reviews"
+  [review]="review"
+></app-review-item>

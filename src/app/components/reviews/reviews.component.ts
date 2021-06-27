@@ -17,4 +17,10 @@ export class ReviewsComponent implements OnInit {
       .getReviews()
       .subscribe((reviews) => (this.reviews = reviews));
   }
+
+  addReview(review: Review) {
+    this.reviewService.addReview(review).subscribe((review) => {
+      this.reviews.push(review);
+    });
+  }
 }
