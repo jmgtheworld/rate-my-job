@@ -1,40 +1,42 @@
-<form (ngSubmit)="onSubmit()">
-  <div class="new-review-form">
-    <span> Write A Review</span>
-    <div class="new-review-item">
-      <label for="company" class="new-review-label"> Company Name</label>
-      <input
-        type="text"
-        name="company"
-        [(ngModel)]="company"
-        class="new-review-input"
-        id="company"
-      />
-    </div>
+<div class="app-body">
+  <form (ngSubmit)="onSubmit()">
+    <div class="new-review-form">
+      <span> Write A Review</span>
+      <div class="new-review-item">
+        <label for="company" class="new-review-label"> Company Name</label>
+        <input
+          type="text"
+          name="company"
+          [(ngModel)]="company"
+          class="new-review-input"
+          id="company"
+        />
+      </div>
 
-    <div class="new-review-item">
-      <label for="review" class="new-review-label"> Review Title</label>
-      <input
-        type="text"
-        name="title"
-        [(ngModel)]="title"
-        class="new-review-input"
-        id="title"
-      />
-    </div>
+      <div class="new-review-item">
+        <label for="review" class="new-review-label"> Review Title</label>
+        <input
+          type="text"
+          name="title"
+          [(ngModel)]="title"
+          class="new-review-input"
+          id="title"
+        />
+      </div>
 
-    <div class="new-review-item-text">
-      <label for="review" class="new-review-label"> Text </label>
-      <textarea
-        type="text"
-        name="text"
-        [(ngModel)]="text"
-        class="new-review-input"
-        id="text"
-      ></textarea>
+      <div class="new-review-item-text">
+        <label for="review" class="new-review-label"> Text </label>
+        <textarea
+          type="text"
+          name="text"
+          [(ngModel)]="text"
+          class="new-review-input"
+          id="text"
+        ></textarea>
+      </div>
     </div>
-  </div>
-  <div class="submit-footer">
-    <input type="submit" value="POST" class="btn-submit" />
-  </div>
-</form>
+    <div class="submit-footer">
+      <input type="submit" value="POST" class="btn-submit" />
+    </div>
+  </form>
+</div>
