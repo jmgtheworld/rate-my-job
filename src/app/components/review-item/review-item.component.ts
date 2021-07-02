@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
 import { Review } from '../../Review';
 
 @Component({
@@ -8,7 +8,12 @@ import { Review } from '../../Review';
 })
 export class ReviewItemComponent implements OnInit {
   @Input() review: Review;
+
   constructor() {}
 
   ngOnInit(): void {}
+
+  viewItem() {
+    console.log('clicked');
+  }
 }

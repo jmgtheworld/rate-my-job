@@ -1,5 +1,11 @@
-<div>
-  <span> Company Name: {{ review.company }} </span>
-  <span> Review Title: {{ review.title }} </span>
-  <span> {{ review.text }} </span>
+<div class="review-item" (click)="viewItem()">
+  <div class="review-item-row">
+    <h3>Company Name:</h3>
+    <p>{{ review.company }}</p>
+  </div>
+  <div class="review-item-row">
+    <h3>Review Title:</h3>
+    <p>{{ review.title }}</p>
+  </div>
+  <span class="review-item-text"> {{ review.text }} </span>
 </div>
